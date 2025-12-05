@@ -228,8 +228,8 @@ CREATE INDEX idx_symbol_date ON stock_data(symbol, date);
 
 ```mermaid
 erDiagram
-    stock_data {
-        SERIAL id PK
+    STOCK_DATA {
+        INT id PK
         VARCHAR symbol
         DATE date
         NUMERIC open
