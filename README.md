@@ -228,8 +228,8 @@ CREATE INDEX idx_symbol_date ON stock_data(symbol, date);
 
 ```mermaid
 erDiagram
-    stock_data {
-        SERIAL id PK
+    STOCK_DATA {
+        INT id PK
         VARCHAR symbol
         DATE date
         NUMERIC open
@@ -580,7 +580,6 @@ The Airflow webserver exposes a UI at `/`, not a public REST API for this projec
 
 ---
 
-# 🎉 You're Ready!
+## 📌 Extending the Pipeline
+This pipeline can be extended by adding new stock symbols, modifying the Airflow schedule, or integrating additional transformation steps depending on your use case.
 
-You now have a robust, production-ready data pipeline template for stock market analytics.  
-You can modify stock symbols, adjust the schedule, and extend this foundation for your own use cases.
